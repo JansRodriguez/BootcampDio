@@ -1,0 +1,59 @@
+## OPERADORES ARITMÉTICOS
+""" 
+print('Entradas: 2 e 3')
+# MULTIPLICAÇÃO
+print('Multiplicação: ', 2 * 3)
+# DIVISÃO
+print('Divisão: ',2 / 3)
+# ADIÇÃO
+print('Adição: ',2 + 3)
+# SUBSTRAÇÃO
+print('Subtração: ',2 - 3)
+# DIVISÃO INTEIRA
+print('Divisão Inteira: ',2 // 3)
+# MÓDULO
+print('Módulo (Resto da divisão): ',2 % 3)
+# EXPONENCIAÇÃO
+print('Exponenciação: ',2 ** 3)
+"""
+
+## OPERADORES DE COMPARAÇÃO
+""" 
+== IGUALDADE
+> MAIOR QUE
+< MENOR QUE
+>= MAIOR IGUAL QUE
+<= MENOR IGUAL QUE
+!= DIFERENTE
+"""
+
+## OPERADORES DE ATRIBUIÇÃO
+"""
+= ATRIBUÇÃO SIMPLES
++= SOMA E ATRIBUIÇÃO
+-= SUBTRAÇÃO E ATRIBUIÇÃO 
+*= MULTIPLICAÇÃO E ATRIBUIÇÇÃO
+/= DIVISÃO E ATRIBUIÇÇÃO
+//= DIVISÃO INTEIRA E ATRIBUIÇÇÃO
+%= MÓDULO E ATRIBUIÇÇÃO
+**= EXPONENCIAÇÃO E ATRIBUIÇÇÃO
+"""
+
+## OPERADORES LÓGICOS
+""" 
+AND -> RELACIONANDO SENTENÇAS, AS PARTES PRECISAM SER VERDADEIRAS
+OR -> COMPARANDO SENTENÇAS, UMA DAS PARTES PRECISA SER VERDADEIRA
+NOT -> NEGA UM SENTENÇA OU COLEÇÃO DE SENTENÇAS.
+"""
+
+## OPERADORES DE IDENTIDADE
+""" - REGIÃO DE MEMÓRIA
+IS
+IS NOT
+""" 
+
+## OPERADORES DE ASSOCIAÇÃO
+""" 
+IN
+NOT IN
+""" 
