@@ -112,7 +112,9 @@ def listarContas(contas):
 def principal():
     ## Na Função principal, precisa conter as váriaveis que serão 'manipuladas' com informações.
         ## VARIÁVEIS
-    saldo, numeroDeSaques, numeroDeposito = 0
+    saldo = 0
+    numeroDeSaques = 0
+    numeroDeposito = 0
     limiteValor = 500
     extrato = ""
     usuarios = []
