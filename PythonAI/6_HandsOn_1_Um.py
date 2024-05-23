@@ -6,10 +6,8 @@ menu = """
         [4] - Sair
 """
     ## VARIÁVEIS
-saldo = 0
+saldo, numero_saques, numero_deposito = 0
 limite_valor_sacado = 500
-numero_saques = 0
-numero_deposito = 0
 extrato = ""
 LIMITES_SAQUES = 3
 

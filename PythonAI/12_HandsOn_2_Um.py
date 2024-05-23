@@ -109,3 +109,49 @@ def listarContas(contas):
         print("="*100)
         print(linha)
 ## FUNÇÃO PRINCIPAL QUE CHAMARÁ TODAS AS FUNÇÕES CRIADAS ACIMA
+def principal():
+    ## Na Função principal, precisa conter as váriaveis que serão 'manipuladas' com informações.
+        ## VARIÁVEIS
+    saldo, numeroDeSaques, numeroDeposito = 0
+    limiteValor = 500
+    extrato = ""
+    usuarios = []
+    contas = []
+        ## CONSTANTES
+    LIMITESDESAQUES = 3
+    AGENCIA = '0001'
+
+    while True:
+        menu()
+        opcao = int(input("Digite sua opcao: "))
+
+        if opcao == 1:
+            valorDeposito = float(input('Informe o valor que desejar depostar: '))
+            saldo, extrato = deposito(saldo, valorDeposito, extrato, numeroDeposito)
+        elif opcao == 2:
+            valorSaque = float(input('Informe o valor a sacar: '))
+
+            saldo, extrato = saque(
+                saldo=saldo,
+                valorSaque=valorSaque,
+                extrato=extrato,
+                limiteValor=limiteValor,
+                numeroDeSaques=numeroDeSaques,
+                limiteDeSaques=LIMITESDESAQUES
+            )
+        elif opcao == 3:
+            extrato(saldo, extrato=extrato)
+        elif opcao == 4:
+            numeroDaConta = len(contas) + 1
+            conta = criarContas(AGENCIA, numeroDaConta, usuarios)
+            if conta:
+                conta.append(conta)
+        elif opcao == 5:
+            listarContas(contas)
+        elif opcao == 6:
+            criarUsuarios(usuarios)
+        elif opcao == 0:
+            break
+        else:
+            print("Operação não listada. Favor, verificar as opções novamente!")
+principal()
